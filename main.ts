@@ -1,3 +1,9 @@
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile77`, function (sprite, location) {
+    info.changeLifeBy(-1)
+})
+scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile79`, function (sprite, location) {
+    info.changeLifeBy(-1)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile94`, function (sprite, location) {
     tiles.setTilemap(tilemap`level1`)
     mySprite = sprites.create(img`
