@@ -1,7 +1,9 @@
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile77`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile79`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile94`, function (sprite, location) {
@@ -30,7 +32,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile94`, function (sprite, 
         `, SpriteKind.Player)
     controller.moveSprite(mySprite)
     scene.cameraFollowSprite(mySprite)
-    info.setLife(9)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile58`, function (sprite, location) {
     tiles.setTilemap(tilemap`level7`)
@@ -58,30 +59,40 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile58`, function (sprite, 
         `, SpriteKind.Player)
     controller.moveSprite(mySprite)
     scene.cameraFollowSprite(mySprite)
-    info.setLife(9)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile45`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile15`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile46`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile42`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile39`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath9, function (sprite, location) {
+    game.over(true)
+})
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile16`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile40`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile36`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile59`, function (sprite, location) {
@@ -110,10 +121,13 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile59`, function (sprite, 
         `, SpriteKind.Player)
     controller.moveSprite(mySprite)
     scene.cameraFollowSprite(mySprite)
-    info.setLife(9)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile44`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath3, function (sprite, location) {
+    game.over(true)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile100`, function (sprite, location) {
     tiles.setTilemap(tilemap`level25`)
@@ -141,9 +155,9 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile100`, function (sprite,
         `, SpriteKind.Player)
     controller.moveSprite(mySprite)
     scene.cameraFollowSprite(mySprite)
-    game.over(true)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile43`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile93`, function (sprite, location) {
@@ -172,7 +186,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile93`, function (sprite, 
         `, SpriteKind.Player)
     controller.moveSprite(mySprite)
     scene.cameraFollowSprite(mySprite)
-    info.setLife(9)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, location) {
     tiles.setTilemap(tilemap`level7`)
@@ -200,7 +213,6 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile61`, function (sprite, 
         `, SpriteKind.Player)
     controller.moveSprite(mySprite)
     scene.cameraFollowSprite(mySprite)
-    info.setLife(9)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, location) {
     tiles.setTilemap(tilemap`level7`)
@@ -228,12 +240,13 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile62`, function (sprite, 
         `, SpriteKind.Player)
     controller.moveSprite(mySprite)
     scene.cameraFollowSprite(mySprite)
-    info.setLife(9)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile31`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile41`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile99`, function (sprite, location) {
@@ -262,9 +275,12 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile99`, function (sprite, 
         `, SpriteKind.Player)
     scene.cameraFollowSprite(mySprite)
     controller.moveSprite(mySprite)
+})
+scene.onOverlapTile(SpriteKind.Player, sprites.castle.tilePath6, function (sprite, location) {
     game.over(true)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile35`, function (sprite, location) {
+    game.reset()
     info.changeLifeBy(-1)
 })
 let mySprite: Sprite = null
@@ -295,4 +311,6 @@ mySprite = sprites.create(img`
 controller.moveSprite(mySprite)
 tiles.setTilemap(tilemap`level13`)
 scene.cameraFollowSprite(mySprite)
-info.setLife(9)
+forever(function () {
+    info.setLife(9)
+})
